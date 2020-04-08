@@ -5,6 +5,7 @@ def find_min_in_nested_arrays(src)
   
   while row_index < src.count do 
     element_index = 0 
+    
     #line will need updated to reflect min number, not string
     smallest_array_element = src[row_index]
     
