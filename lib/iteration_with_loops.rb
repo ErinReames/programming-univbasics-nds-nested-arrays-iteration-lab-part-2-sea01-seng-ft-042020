@@ -7,16 +7,24 @@ def find_min_in_nested_arrays(src)
     element_index = 0 
     #line will need updated to reflect min number, not string
     smallest_array_element = src[row_index]
+    
+    #while the elements are less than what's in the row 
     while element_index < src[row_index].count do 
-      if src[row_index][element_index] < smallest_array_element
-        
+      
+      if src[row_index][element_index] 
         smallest_array_element = src[row_index][element_index]
       end 
+      #increases element index by one
       element_index += 1 
     end
+    
+    #push results to the new results array
     new_results << smallest_array_element
-    row_index += 1 
+    
+    #once elements in the array have all been run through, increase the row index by 1
+    row_index += 1  
 end   
 
+#return the new array
 new_results
 end
